@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ability Stone Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Choose Two Engravings</h1>
+    <div id="abilityStone">
+        <select id="battleEngravingsList" onchange="addToRow(this.value)">
+            <!-- <option>-- Select Two Engravings --</option> -->
+            <!-- <option value="grudge">Grudge</option> -->
+            <!-- <option value="kbw">Keen Blunt Weapon</option> -->
+            <!-- <option value="cursed doll">Cursed Doll</option> -->
+            <!-- <option value="adrenaline">Adrenaline</option> -->
+            <!-- <option value="raid">Raid Captain</option> -->
+            <!-- <option value="taijutsu">Ultimate Skill: Taijutsu</option> -->
+        </select>  
+    <span id="successRate">75</span>
+    <select id="malusEngravingList" onchange="addToMalus(this.value)">
+        <option>Select a Malus</option>
+        <option value="https://lostarkcodex.com/icons/ability_218.webp">Atk. Power Reduction</option>
+    </select>
+    </div>
+
+    <div id="engravingRow1">
+        <span id="engraving1">
+            <button id="topTap" onclick="tap1()" hidden>Tap!</button>
+        </span>
+        <div id="engravingNodes1">
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+        </div>
+    </div>
+    
+    <div id="engravingRow2">
+        <span id="engraving2">    
+            <button id="botTap" onclick="tap2()" hidden>Tap!</button>
+        </span>
+        <div id="engravingNodes2">
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+        </div>
+    </div>
+
+    <div id="malusRow">
+        <span id="malus">
+            <button id="malusTap" onclick="tap3()" hidden>Tap!</button>
+        </span>
+        <div id="malusNodes">
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+            <span>?</span>
+        </div>
+    </div>
+
+    <script src="abilityStone.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+</body>
+</html>
